@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JagaJejak — Literasi Keamanan Akun & Jejak Digital Pelajar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigasi Utama -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#beranda" class="brand">
+        <span class="brand-icon">🛡️</span>
+        <span>Jaga<strong>Jejak</strong></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">☰</button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#masalah">Latar Belakang</a>
+        <a href="#edukasi">Edukasi</a>
+        <a href="#simulasi">Simulasi AI</a>
+        <a href="#panduan">Pencegahan & Pemulihan</a>
+        <a href="#lapor" class="btn-nav">Lapor Simulasi</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section: Judul, Tujuan, Sasaran Pengguna, Petunjuk -->
+  <section id="beranda" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <span class="badge-pill">Proyek PSAS Informatika Kelas XI • Dampak Sosial Informatika</span>
+        <h1>Kendalikan Jejak Digitalmu Sebelum Akunmu Dikendalikan Orang Lain.</h1>
+        <p class="hero-desc">
+          Platform edukasi interaktif berbahasa sehari-hari untuk membantu siswa SMA mengenali celah keamanan akun, melatih kewaspadaan terhadap tautan penipuan, dan mengetahui langkah cepat pemulihan saat akun bermasalah.
+        </p>
+        <div class="hero-actions">
+          <a href="#simulasi" class="btn btn-primary">Mulai Simulasi Risiko</a>
+          <a href="#panduan" class="btn btn-secondary">Panduan Darurat Akun</a>
+        </div>
+        <div class="target-box">
+          <div><strong>🎯 Sasaran Pengguna:</strong> Pelajar SMA/SMK pengguna akun belajar, media sosial, gim daring, dan aplikasi AI.</div>
+          <div><strong>🧭 Petunjuk Singkat:</strong> Pahami risiko di bagian <em>Edukasi</em> → Uji kebiasaanmu di <em>Simulasi AI</em> → Pelajari langkah darurat di <em>Panduan</em> → Kirim uji coba laporan di <em>Lapor Simulasi</em>.</div>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <h3>Ringkasan Tujuan Website</h3>
+        <ul class="checklist">
+          <li><strong>Edukasi Praktis:</strong> Mengubah istilah keamanan siber yang rumit menjadi kebiasaan harian yang mudah diterapkan siswa.</li>
+          <li><strong>Deteksi Dini (Simulasi):</strong> Melatih siswa mengecek tingkat risiko kebiasaan akun dan mengenali pesan <em>phishing</em>.</li>
+          <li><strong>Respon Cepat Insiden:</strong> Menyediakan urutan tindakan jelas agar siswa tidak panik saat akun diretas.</li>
+          <li><strong>Pencatatan Terstruktur:</strong> Menghubungkan formulir laporan simulatif ke Google Sheets via Google Apps Script.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bagian 1: Analisis Masalah & Dampak Sosial -->
+  <section id="masalah" class="section bg-soft">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">1. Analisis Dampak Sosial Informatika</span>
+        <h2>Mengapa Kebiasaan Sepele di Internet Berdampak Besar?</h2>
+        <p>Aktivitas daring siswa—mulai dari akun sekolah, gim, media sosial, hingga AI—meninggalkan jejak digital permanen. Kebiasaan kurang aman memicu dampak nyata bagi individu dan lingkungan sekolah.</p>
+      </div>
+
+      <div class="grid-3">
+        <article class="card">
+          <div class="card-icon">🔑</div>
+          <h3>Kebiasaan Pemicu Risiko</h3>
+          <p>Memakai satu kata sandi yang sama di banyak aplikasi, menunda aktivasi autentikasi dua faktor (2FA), asal klik tautan hadiah/ancaman blokir, serta mengunggah lokasi, jadwal, dan isi obrolan pribadi ke publik.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">⚠️</div>
+          <h3>Dampak Akademik & Sosial</h3>
+          <p>Hilangnya akses ke akun tugas dan dokumen belajar, rusaknya nama baik serta kepercayaan teman/keluarga akibat akun bajakan menyebar penipuan, hingga pencurian identitas jangka panjang.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">🧠</div>
+          <h3>Dampak Psikologis & Solusi</h3>
+          <p>Siswa sering panik, cemas, dan malu saat insiden terlanjur terjadi karena bingung urutan penanganannya. Website ini hadir sebagai pendamping preventif sekaligus panduan langkah demi langkah.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bagian 2: Edukasi Bahasa Sehari-hari -->
+  <section id="edukasi" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">2. Edukasi Bahasa Sehari-hari</span>
+        <h2>4 Celah Paling Sering Terjadi di Kalangan Siswa</h2>
+        <p>Klik tab di bawah untuk melihat contoh kasus sehari-hari dan cara menghindarinya.</p>
+      </div>
+
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="tab-pw">1. Satu Password untuk Semua</button>
+        <button class="tab-btn" data-tab="tab-phish">2. Jebakan Link Hadiah & Blokir</button>
+        <button class="tab-btn" data-tab="tab-2fa">3. Malas Pasang 2FA</button>
+        <button class="tab-btn" data-tab="tab-overshare">4. Oversharing Jejak Digital</button>
+      </div>
+
+      <div class="tab-panel active" id="tab-pw">
+        <h3>Efek Domino Kata Sandi Kembar</h3>
+        <p><strong>Situasi Nyata:</strong> Kamu memakai email sekolah dan password yang sama untuk mendaftar situs gim atau aplikasi edit foto gratis. Jika situs gim tersebut mengalami kebocoran data, peretas otomatis bisa membuka email sekolah dan Google Drive tugasmu.</p>
+        <p><strong>Solusi Praktis:</strong> Gunakan kombinasi minimal 12 karakter (kalimat sandi unik + angka + simbol), bedakan password akun utama (email/sekolah) dengan akun hiburan, dan manfaatkan <em>Password Manager</em> bawaan peramban.</p>
+      </div>
+
+      <div class="tab-panel" id="tab-phish">
+        <h3>Pesan Panik & Iming-Iming Gratis (Phishing)</h3>
+        <p><strong>Situasi Nyata:</strong> Muncul pesan DM atau WhatsApp: <em>"Akun Instagram Anda melanggar hak cipta dan akan dihapus dalam 2 jam, verifikasi di tautan ini"</em> atau <em>"Klaim voucher diamond gratis dengan login akunmu"</em>.</p>
+        <p><strong>Solusi Praktis:</strong> Cek alamat domain tautan secara teliti. Jangan pernah memasukkan password atau kode OTP di halaman yang dibuka dari tautan pesan mendadak.</p>
+      </div>
+
+      <div class="tab-panel" id="tab-2fa">
+        <h3>Gembok Ganda dengan Autentikasi Dua Faktor (2FA)</h3>
+        <p><strong>Situasi Nyata:</strong> Menganggap 2FA ribet karena harus memasukkan kode tambahan saat login, padahal 2FA adalah penyelamat terakhir ketika passwordmu sudah terlanjur bocor.</p>
+        <p><strong>Solusi Praktis:</strong> Aktifkan 2FA pada akun email utama, media sosial, dan akun belajar menggunakan aplikasi autentikator (seperti Google Authenticator) atau kunci sandi (Passkey), bukan sekadar SMS.</p>
+      </div>
+
+      <div class="tab-panel" id="tab-overshare">
+        <h3>Jejak Digital Tidak Bisa Ditarik Sepenuhnya</h3>
+        <p><strong>Situasi Nyata:</strong> Mengunggah foto kartu pelajar, tangkapan layar chat pribadi, jadwal pulang sekolah <em>real-time</em>, atau memasukkan data sensitif ke dalam <em>prompt</em> AI publik.</p>
+        <p><strong>Solusi Praktis:</strong> Terapkan prinsip <em>"Saring Sebelum Sharing"</em>: buramkan informasi pribadi pada gambar, atur privasi akun media sosial, dan hindari menempelkan data identitas nyata ke layanan AI generatif.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bagian 3: Simulasi Interaktif & Fitur AI Berlabel Simulasi -->
+  <section id="simulasi" class="section bg-soft">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">3. Latihan Kewaspadaan & Asisten AI</span>
+        <h2>Simulasi Pengecekan Risiko & Deteksi Pesan Mencurigakan</h2>
+        <p>Gunakan data contoh untuk menguji tingkat kerentanan kebiasaan akunmu serta mencoba prototipe analisis pesan berbasis aturan & simulasi AI.</p>
+      </div>
+
+      <div class="sim-grid">
+        <!-- Kiri: Kuis Cek Skor Risiko Akun -->
+        <div class="card">
+          <h3>🔍 Cek Skor Risiko Kebiasaan Akun</h3>
+          <p class="small-muted">Jawab 5 pertanyaan singkat berdasarkan kebiasaanmu saat ini:</p>
+          <form id="riskForm" class="sim-form">
+            <label>
+              1. Apakah kamu memakai password yang sama untuk email utama dan akun media sosial/gim?
+              <select id="q1">
+                <option value="0">Tidak, setiap akun penting punya password berbeda</option>
+                <option value="15">Sebagian sama, hanya beda angka di belakang</option>
+                <option value="25">Ya, sama semua supaya mudah diingat</option>
+              </select>
+            </label>
+            <label>
+              2. Apakah Autentikasi Dua Faktor (2FA) aktif di email utama & media sosialmu?
+              <select id="q2">
+                <option value="0">Ya, aktif memakai aplikasi autentikator / passkey</option>
+                <option value="10">Hanya aktif di sebagian akun</option>
+                <option value="25">Belum aktif karena terasa ribet</option>
+              </select>
+            </label>
+            <label>
+              3. Apa reaksimu saat menerima tautan "Akun akan diblokir hari ini" atau "Hadiah gratis"?
+              <select id="q3">
+                <option value="0">Abaikan, cek langsung lewat aplikasi resmi tanpa klik link</option>
+                <option value="15">Buka link-nya dulu untuk lihat tampilannya</option>
+                <option value="25">Langsung isi username & password agar akun aman</option>
+              </select>
+            </label>
+            <label>
+              4. Seberapa sering kamu membagikan lokasi real-time, jadwal kegiatan, atau foto dokumen ke publik?
+              <select id="q4">
+                <option value="0">Tidak pernah, profil diatur privat & data sensitif disensor</option>
+                <option value="10">Kadang-kadang saat sedang acara tertentu</option>
+                <option value="15">Sering mengunggah secara terbuka di story/postingan</option>
+              </select>
+            </label>
+            <label>
+              5. Bagaimana caramu menggunakan aplikasi berbasis AI?
+              <select id="q5">
+                <option value="0">Tidak pernah memasukkan password, NIK, atau chat rahasia ke AI</option>
+                <option value="5">Kadang menempelkan tugas sekolah tanpa identitas</option>
+                <option value="10">Pernah menempelkan data pribadi/akun ke prompt AI</option>
+              </select>
+            </label>
+            <button type="submit" class="btn btn-primary full-width">Hitung Tingkat Risiko</button>
+          </form>
+
+          <div id="riskResult" class="result-box hidden" aria-live="polite"></div>
+        </div>
+
+        <!-- Kanan: Asisten Analisis Pesan AI (Berlabel Simulasi) -->
+        <div class="card">
+          <div class="ai-header">
+            <h3>🤖 Asisten Deteksi Pesan Mencurigakan</h3>
+            <span class="sim-badge">MODE SIMULASI AI (PROTOTIPE TERVERIFIKASI)</span>
+          </div>
+          <p class="small-muted">
+            <strong>Disclaimer Transparansi AI:</strong> Fitur ini merupakan <em>prototipe simulasi berbasis heuristik kata kunci & pola phishing</em> yang telah diverifikasi untuk tujuan edukasi, bukan pemindaian server langsung. Gunakan data contoh atau tempelkan teks pesan mencurigakan (jangan masukkan password asli).
+          </p>
+
+          <div class="sample-buttons">
+            <button type="button" class="btn-chip" data-sample="Selamat! Nomor Anda terpilih mendapatkan hadiah 5000 Diamond gratis. Segera login di http://klaim-hadiah-akun.xyz sebelum hangus!">Contoh 1: Hadiah Palsu</button>
+            <button type="button" class="btn-chip" data-sample="PERINGATAN KEAMANAN: Akun Instagram Anda terdeteksi melanggar kebijakan dan akan dinonaktifkan permanen dalam 2 jam. Konfirmasi identitas dan kata sandi Anda di bit.ly/bantuan-ig-resmi">Contoh 2: Ancaman Blokir</button>
+            <button type="button" class="btn-chip" data-sample="Halo teman-teman kelas XI, pengumpulan tugas Informatika besok pukul 08.00 WIB melalui Google Classroom resmi sekolah. Terima kasih.">Contoh 3: Pesan Aman</button>
+          </div>
+
+          <textarea id="aiInput" rows="5" placeholder="Pilih tombol contoh di atas atau tempel teks DM/WhatsApp/Email yang mencurigakan di sini..."></textarea>
+          <button type="button" id="analyzeBtn" class="btn btn-primary full-width">Analisis Pesan (Simulasi AI)</button>
+
+          <div id="aiResult" class="result-box hidden" aria-live="polite"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bagian 4: Panduan Pencegahan Rutin & Pemulihan Insiden -->
+  <section id="panduan" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">4. Panduan Praktis Siap Pakai</span>
+        <h2>Langkah Pencegahan Rutin & Pemulihan Saat Akun Bermasalah</h2>
+        <p>Ikuti daftar periksa rutin dan urutan tindakan darurat berikut agar tidak panik saat menghadapi insiden digital.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card border-green">
+          <h3>🛡️ Checklist Pencegahan Rutin (Setiap Bulan)</h3>
+          <ol class="step-list">
+            <li><strong>Perbarui Kata Sandi Utama:</strong> Pastikan email sekolah, email pribadi, dan media sosial memakai sandi unik yang kuat.</li>
+            <li><strong>Cek Perangkat Tertaut (Active Sessions):</strong> Buka pengaturan keamanan akun dan keluarkan (<em>Log Out</em>) perangkat asing yang tidak dikenali.</li>
+            <li><strong>Audit Aplikasi Pihak Ketiga:</strong> Cabut izin akses situs/gim lama yang terhubung dengan tombol <em>"Login with Google"</em>.</li>
+            <li><strong>Rapikan Jejak Digital:</strong> Arsipkan atau hapus unggahan lama yang menampilkan informasi pribadi sensitif.</li>
+          </ol>
+        </div>
+
+        <div class="card border-red">
+          <h3>🚨 Urutan Tindakan Darurat Saat Akun Diretas</h3>
+          <ol class="step-list">
+            <li><strong>Jangan Panik & Amankan Email Utama Dulu:</strong> Segera ganti password email pemulihan karena email adalah kunci seluruh akun lain.</li>
+            <li><strong>Putuskan Semua Sesi Login:</strong> Pilih fitur <em>"Keluar dari semua perangkat"</em> dan aktifkan/reset 2FA.</li>
+            <li><strong>Gunakan Fitur Pemulihan Resmi:</strong> Jika password sudah diubah peretas, klik <em>"Lupa Kata Sandi / Akun Diretas"</em> hanya di situs/aplikasi resmi.</li>
+            <li><strong>Beri Tahu Lingkungan Terdekat:</strong> Informasikan teman, grup kelas, dan guru agar mengabaikan pesan pinjam uang atau tautan aneh dari akunmu.</li>
+            <li><strong>Dokumentasikan Bukti:</strong> Simpan tangkapan layar kronologi kejadian untuk pelaporan ke admin sekolah atau platform terkait.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bagian 5: Formulir Pelaporan Simulatif (Google Apps Script + Google Sheets) -->
+  <section id="lapor" class="section bg-soft">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">5. Integrasi Google Apps Script & Sheets</span>
+        <h2>Formulir Pelaporan Simulatif & Masukan Pengguna</h2>
+        <p>Gunakan formulir ini untuk mensimulasikan pelaporan insiden keamanan akun atau mengirim masukan pengembangan website ke Google Sheets.</p>
+      </div>
+
+      <div class="privacy-notice">
+        <strong>🔒 Komitmen Etika & Privasi Data:</strong> Sesuai prinsip perlindungan data pribadi, <strong>DILARANG</strong> memasukkan kata sandi, kode OTP, NIK, nomor telepon pribadi, atau data sensitif nyata. Gunakan nama inisial/samaran dan data contoh untuk pengujian.
+      </div>
+
+      <div class="form-wrapper card">
+        <form id="reportForm">
+          <div class="form-row">
+            <label>
+              Nama / Inisial (Data Contoh) *
+              <input type="text" id="nama" name="nama" placeholder="Contoh: Siswa_XI_01" required />
+            </label>
+            <label>
+              Kelas / Kategori Pengguna *
+              <select id="kelas" name="kelas" required>
+                <option value="">-- Pilih Kategori --</option>
+                <option value="Kelas X SMA">Kelas X SMA</option>
+                <option value="Kelas XI SMA">Kelas XI SMA</option>
+                <option value="Kelas XII SMA">Kelas XII SMA</option>
+                <option value="Guru / Penguji">Guru / Penguji</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="form-row">
+            <label>
+              Jenis Laporan / Topik *
+              <select id="jenis" name="jenis" required>
+                <option value="">-- Pilih Jenis --</option>
+                <option value="Simulasi Tautan Phishing">Simulasi Tautan Phishing</option>
+                <option value="Simulasi Akun Diretas">Simulasi Akun Diretas</option>
+                <option value="Simulasi Kebocoran Privasi / Jejak Digital">Simulasi Kebocoran Privasi / Jejak Digital</option>
+                <option value="Masukan & Evaluasi Website">Masukan & Evaluasi Website</option>
+              </select>
+            </label>
+            <label>
+              Tingkat Urgensi Simulasi *
+              <select id="urgensi" name="urgensi" required>
+                <option value="Rendah (Edukasi/Masukan)">Rendah (Edukasi/Masukan)</option>
+                <option value="Sedang (Pencegahan)">Sedang (Pencegahan)</option>
+                <option value="Tinggi (Simulasi Insiden Akun)">Tinggi (Simulasi Insiden Akun)</option>
+              </select>
+            </label>
+          </div>
+
+          <label>
+            Kronologi Simulasi atau Masukan Website *
+            <textarea id="deskripsi" name="deskripsi" rows="4" placeholder="Tuliskan contoh kasus simulasi atau saran perbaikan fitur website..." required></textarea>
+          </label>
+
+          <label class="checkbox-label">
+            <input type="checkbox" id="konfirmasiPrivasi" required />
+            <span>Saya menyatakan bahwa data yang diisi adalah <strong>data simulasi/contoh</strong> dan tidak memuat kata sandi, OTP, maupun informasi pribadi rahasia.</span>
+          </label>
+
+          <button type="submit" id="submitBtn" class="btn btn-primary full-width">Kirim Laporan Simulatif ke Google Sheets</button>
+        </form>
+
+        <div id="formStatus" class="result-box hidden" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>
+        <strong>JagaJejak</strong> — Proyek PSAS Informatika Kelas XI (Dampak Sosial Informatika)
+        <p class="small-muted">Dibangun dengan HTML, CSS, JavaScript, GitHub Pages, Google Apps Script, dan prototipe asisten AI terverifikasi.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#beranda">Kembali ke Atas ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
